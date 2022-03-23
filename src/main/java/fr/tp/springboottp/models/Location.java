@@ -33,39 +33,19 @@ public class Location {
         return location_id;
     }
 
-    public void setLocation_id(long location_id) {
-        this.location_id = location_id;
-    }
-
     public double getLatitude() {
         return latitude;
-    }
-
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
     }
 
     public double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
-
     public Timestamp getLocation_date() {
         return location_date;
     }
 
-    public void setLocation_date(Timestamp location_date) {
-        this.location_date = location_date;
-    }
-
     public List<User> getUsers() {
         return users;
-    }
-
-    public void setUsers(List<User> users) {
-        this.users = users;
     }
 }

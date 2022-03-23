@@ -19,12 +19,11 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.postgresql:postgresql'
 	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
-	implementation 'org.springframework.boot:spring-boot-starter-jetty'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.security:spring-security-test'
+	runtimeOnly 'org.apache.tomcat.embed:tomcat-embed-jasper'
 }
 
-configurations.implementation {
-	exclude module: 'spring-boot-starter-tomcat'
-}
 
 tasks.named('test') {
 	useJUnitPlatform()

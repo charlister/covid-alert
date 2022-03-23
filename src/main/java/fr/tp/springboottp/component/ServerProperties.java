@@ -1,4 +1,4 @@
-package fr.tp.springboottp.Component;
+package fr.tp.springboottp.component;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
